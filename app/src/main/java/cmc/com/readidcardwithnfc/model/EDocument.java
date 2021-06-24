@@ -5,6 +5,7 @@ import java.security.PublicKey;
 public class EDocument {
 
     private DocType docType;
+    private OptionPersonal optionPerson;
     private PersonDetails personDetails;
     private AdditionalPersonDetails additionalPersonDetails;
     private PublicKey docPublicKey;
@@ -39,5 +40,13 @@ public class EDocument {
 
     public void setDocPublicKey(PublicKey docPublicKey) {
         this.docPublicKey = docPublicKey;
+    }
+
+    public OptionPersonal getOptionPerson() {
+        return optionPerson;
+    }
+
+    public void setOptionPerson(OptionPersonal optionPerson) {
+        this.optionPerson = optionPerson;
     }
 }
